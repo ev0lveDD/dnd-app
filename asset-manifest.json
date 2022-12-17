@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dnd-app/static/css/main.73e3dc44.css",
+    "main.js": "/dnd-app/static/js/main.a5390aa4.js",
+    "static/media/image.jpg": "/dnd-app/static/media/image.93ea0670969f66435d0e.jpg",
+    "index.html": "/dnd-app/index.html",
+    "main.73e3dc44.css.map": "/dnd-app/static/css/main.73e3dc44.css.map",
+    "main.a5390aa4.js.map": "/dnd-app/static/js/main.a5390aa4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73e3dc44.css",
+    "static/js/main.a5390aa4.js"
+  ]
+}
