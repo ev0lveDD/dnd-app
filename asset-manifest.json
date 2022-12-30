@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dnd-app/static/css/main.a0a1da80.css",
+    "main.css": "/dnd-app/static/css/main.1086ff33.css",
     "main.js": "/dnd-app/static/js/main.598ae298.js",
     "static/media/cleric.jpg": "/dnd-app/static/media/cleric.3119babda898dc54df99.jpg",
     "index.html": "/dnd-app/index.html",
-    "main.a0a1da80.css.map": "/dnd-app/static/css/main.a0a1da80.css.map",
+    "main.1086ff33.css.map": "/dnd-app/static/css/main.1086ff33.css.map",
     "main.598ae298.js.map": "/dnd-app/static/js/main.598ae298.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0a1da80.css",
+    "static/css/main.1086ff33.css",
     "static/js/main.598ae298.js"
   ]
 }
