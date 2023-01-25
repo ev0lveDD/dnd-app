@@ -1,38 +1,644 @@
-.App {
-  text-align: center;
+.app-body {
+  background-color: #100e14;
+  color: #bfbbbd;
+  font-family: 'Cardo', serif;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10vh;
+    gap: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stat-container {
+    border: 1px solid #a19ca0;
+    background-color: #18161e;
+    border-radius: 8px;
+    display: flex;
+    min-width: 5.9em;
+    height: 130px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Stat-Oval {
+  margin-top: 1.2em;
   display: flex;
-  flex-direction: column;
+  border: 1px solid #a19ca0;
+  background-color: #100e14;
+  width: 60px;
+  height: 35px;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.stat-container > p {
+  font-size: 0.65em;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.stat-container > h2 {
+  border: 0.5px solid #ce9d63;
+  border-radius: 8px;
+  padding: 0 16px 0 16px;
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  color: #ce9d63;
 }
+
+.stat-container > h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.stat-button-container {
+  margin: 0.3em 0 2em 0;
+  z-index: 99;
+  padding-bottom: 2em;
+}
+
+.stat-button {
+  color: #bfbbbd;
+  border: 1px solid #bfbbbd;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.stat-button-small {
+  color: #bfbbbd;
+  border: 1px solid #bfbbbd;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: 600;
+  align-self: center;
+  justify-self: center;
+  width: 20px;
+  height: 20px;
+  padding: 4px 4px;
+}
+
+.row {
+  gap: 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-container {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2em;
+  }
+  
+  td, th {
+    border: 0;
+    border-bottom: 0.5px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .Stat-Name {
+    color: #bfbbbd;
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+
+  .Stat-Border {
+    text-align: center;
+    width: 2em;
+    margin: 0;
+    font-size: 1em;
+    border: 0.5px solid #ce9d63;
+    border-radius: 4px;
+    padding: 0 8px 0 8px;
+    color: #ce9d63;
+  }
+
+  .Round-Checkbox {
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em dashed white;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    transition: 0.3s ease-out;
+    opacity: 70%;
+  }
+
+  .Round-Checkbox:checked {
+    opacity: 100%;
+    background-color: white;
+    border: none;
+    width: 1.15em;
+    height: 1.15em;
+    transition: 0.3s ease-in;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+
+  .Avatar-Image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .Avatar-Image > img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    background-color: teal;
+    z-index: 0;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    font-family: 'Cardo', serif;
+    -webkit-box-shadow: inset 0px 0px 40px 30px rgba(17, 17, 17, 1);
+    -moz-box-shadow: inset 0px 0px 40px 30px rgba(17, 17, 17, 1);
+    box-shadow: inset 0px 0px 40px 30px rgba(17, 17, 17, 1);
+  }
+
+  .Header-Top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 90vw;
+    margin-top: 1em;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .Header-Top-Left {
+    display: flex;
+    color: #F0ECCF;
+    width: 100%;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-top: 1em;
+  }
+
+  .Back-Arrow-Character {
+    color: white;
+    font-size: 1.5em;
+    width: 1.3em;
+    height: 1.3em;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: 0.6s ease-out;
+  }
+  
+  .Back-Arrow-Character:hover {
+    transition: 0.6s ease-in;
+    opacity: 100;
+  }
+
+  .Header-Bottom-Left {
+    margin-top: auto;
+    color: #F0ECCF;
+    margin-bottom: 12vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .Header-Bottom-Left > h1 {
+    margin: 0.3em 0 0.3em 0;
+  }
+
+  .Header-Bottom-Left > p {
+    margin: 0;
+    font-size: 1em;
+    word-spacing: 0.5em;
+  }
+
+  .Header-Top-Right {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Health {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Header-Top-Right > .Health > .Health-Button {
+    font-family: 'Cardo', serif;
+    border: none;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 0.5em 1.5em;
+    color: white;
+  }
+
+  .Header-Top-Right > .Health > .Health-Button > h3 {
+    margin: 0;
+  }
+
+  .Header-Top-Right > .Health > .Health-Button > h5 {
+    margin: 0;
+  }
+
+  progress {
+    position: absolute;
+    background-color: transparent;
+    border-radius: 8px; 
+    height: 4em;
+    width: 4em;
+    border: 1px solid white;
+    z-index: -20;
+    transform: rotate(-90deg);
+  }
+
+  progress::before {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    content: attr(data-label);
+    color: white;
+    left: 0.5em;
+    top: 0.5em;
+    bottom: 0.5em;
+    min-width: 2rem;
+    max-width: calc(100%-1em);
+  }
+
+  progress::-webkit-progress-bar {
+    background-color: transparent;
+    border-radius: 8px;
+    position: absolute;
+  }
+
+  :root{
+    --healthColor: #01EEB8;
+  }
+
+  progress::-webkit-progress-value {
+    border-radius: 8px; 
+    background-color: var(--healthColor); 
+    transition: ease-in 3s;
+    position: absolute;
+  }
+
+  .Header-Top-Right > .Settings-Button {
+    font-size: 1.5em;
+    color: #F1F6F5;
+    background-color: transparent;
+    border: none;
+  }
+
+  .Header-Top-Right > .Settings-Button:active {
+    animation: zoom-in-zoom-out 1s ease;
+  }
+
+  .Header-Top-Right > .Settings-Button:hover {
+    color: #D6E4E5;
+  }
+
+  .Header-Top-Right > .Health > .Heart-Button {
+    font-size: 1.5em;
+    color: #F1F6F5;
+    background-color: transparent;
+    border: none;
+    position: relative;
+  }
+
+  .Header-Top-Right > .Health > .Heart-Button > i > h5{
+    margin: 0.4em;
+    font-size: 0.6em;
+    font-family: 'Cardo', serif;
+  }
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(0.3);
+    }
+    40% {
+      transform: scale(1.5);
+    }
+    60% {
+      transform: scale(1);
+    }
+    80% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .bottom-stats {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em 5vw 2em 5vw;
+  }
+
+  .bottom-stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottom-stats-container p {
+    margin-top: 0;
+    font-size: 0.6em;
+    font-weight: 700;
+  }
+
+  .bottom-stats-container h3 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3em;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ce9d63;
+  }
+
+  .bottom-stats-container h3 > p {
+    margin: 0.5em 0 0 0;
+  }
+
+  .Health-Form {
+    display: none;
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: #18161e;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+  .Health-Form-Top-Bar {
+    background-color: #100e14;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    height: 10vh;
+    width: 100%;
+  }
+
+  .Back-Arrow {
+    color: white;
+    font-size: 1.5em;
+    width: 1.3em;
+    height: 1.3em;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1vw;
+    background-color: transparent;
+    transition: 0.6s ease-out;
+  }
+  
+  .Back-Arrow:hover {
+    transition: 0.6s ease-in;
+    opacity: 100;
+  }
+
+  .Health-Form-Top-Bar > p {
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .Health-Form-Health-Bar {
+    margin-top: 1em;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Health-Form-Health-Bar > .Health-Form-Health-Bar-Left {
+    background-color: #100e14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    width: 60vw;
+    height: 20vh;
+  }
+
+  .Health-Form-Health-Bar > .Health-Form-Health-Bar-Left > h1 {
+    margin: 1em 0 0 0;
+    padding: 0;
+  }
+
+  .Health-Form-Health-Bar > .Health-Form-Health-Bar-Left > p {
+    margin: -0.5em 0 0 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+
+  .Health-Form-Health-Bar > .Splitter {
+    margin-left: 1em;
+  }
+
+  .Health-Form-Health-Bar > .Health-Form-Health-Bar-Right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    width: 60vw;
+    height: 20vh;
+  }
+
+  .Health-Form-Health-Bar > .Health-Form-Health-Bar-Right > h1 {
+    margin: 1em 0 0 0;
+    padding: 0;
+  }
+
+  .Health-Form-Health-Bar > .Health-Form-Health-Bar-Right > p {
+    margin: -0.5em 0 0 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+
+  .Health-Form > .Health-Form-Health-Buttons {
+    background-color: #100e14;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+    justify-content: center;
+    width: 95%;
+    padding: 2em 0 2em 0;
+  }
+
+  .Health-Form > .Health-Form-Health-Buttons > button {
+    margin-left: 3vw;
+    border: none;
+    width: 9em;
+    background-color: #01EEB8;
+    border-radius: 4px;
+    padding: 0.5em 1.5em;
+    color: #111111;
+    font-family: 'Cardo', serif;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .Health-Form > .Health-Form-Health-Buttons > .Damage-Button {
+    background-color: #FF0000;
+    color: white;
+  }
+
+  .Health-Form > .Health-Form-Health-Buttons > input {
+    margin-left: 3vw;
+    border: none;
+    width: 8em;
+    background-color: #18161e;
+    border-radius: 4px;
+    padding: 0.5em 0.5em;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .Saving-Throws{
+      display: flex;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1em;
+  }
+
+  .Saving-Throw {
+    border: 1px solid #bfbbbd;
+    border-radius: 8px;
+    display: flex;
+    min-width: 40vw;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 5px;
+    font-size: 0.8em;
+    background-color: #18161e;
+  }
+
+  .Saving-Throw > .Round-Checkbox {
+    margin: -0.5em;
+    opacity: 80%;
+    background-color: #1c1415;
+  }
+  .Saving-Throw > .Round-Checkbox:checked {
+    background-color: white;
+  }
+
+  .Saving-Throw > .Stat-Border {
+    width: 1em;
+    padding: 8px 8px;
+    margin-right: 1em;
+  }
+
+  .Section-Label{
+    margin-left: 5vw;
+  }
+
+  hr {
+    width: 90vw;
+    border: 0;
+    border-bottom: 0.5px solid #dddddd;
+  }
+
+  .Sense {
+    border: 1px solid #a19ca0;
+    background-color: #18161e;
+    border-radius: 8px;
+    display: flex;
+    max-width: 90vw;
+    height: 50px;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    margin-left: 5vw;
+    margin-bottom: 2em;
+    font-size: 0.8em;
+    gap: 2em;
+  }
+
+  .Sense > h2 {
+    margin-left: 1em;
+  }
+
+  .Darkvision {
+    margin-left: 5vw;
+  }
+
+  .Sense > .Stat-Border {
+    width: 2em;
+    padding: 10px 10px;
+    margin-right: 1em;
+  }
+
+  

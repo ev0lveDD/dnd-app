@@ -1,0 +1,18 @@
+
+    {
+        "characterID": 1,
+        "name": "Thorfinn",
+        "race": "High Elf",
+        "class": "Cleric",
+        "level": 4,
+        "currentHP": 28,
+        "maxHP": 28,
+        "armorClass": 12,
+        "walkingSpeed": 30,
+        "strengthValue": 16,
+        "dexterityValue": 12,
+        "constitutionValue": 14,
+        "intelligenceValue": 16,
+        "wisdomValue": 18,
+        "charismaValue": 20
+    }

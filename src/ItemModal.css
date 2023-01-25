@@ -1,0 +1,84 @@
+.Modal-Background {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #100e14;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Modal-Container {
+    width: 18em;
+    height: 25em;
+    border-radius: 12px;
+    background-color: #18161e;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    position: relative;
+}
+
+.Modal-Container .Modal-Title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1em;
+}
+
+.Modal-Title-Close-Btn {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    width: 1.3em;
+    height: 1.3em;
+    border: none;
+    background-color: transparent;
+    right: 1em;
+    transition: 0.6s ease-out;
+}
+
+.Modal-Container .Modal-Body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.P-Hint{
+    color: #a19ca0;
+    font-size: 1em;
+    text-align: center;
+}
+
+.Modal-Container .Modal-Footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Modal-Container .Modal-Footer button{
+    margin: 10px;
+    border: none;
+    width: 9em;
+    background-color: #ce9d63;
+    border-radius: 4px;
+    padding: 0.5em 1.5em;
+    font-family: 'Cardo', serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color:white;
+    cursor: pointer;
+}
+
+
+.Modal-Container .Modal-Footer .Delete-Button {
+    background-color: #FF0000;
+}

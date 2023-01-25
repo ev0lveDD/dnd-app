@@ -1,0 +1,239 @@
+.Inventory-Body {
+    min-height: 80vw;
+}
+
+.Inventory-Body > p{
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.Currency-Row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.Currency-Button {
+    font-family: 'Cardo', serif;
+    border: none;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 0.5em 0.5em;
+    color: white;
+    width: 5rem;
+  }
+
+.Currency-Button > h3 {
+    margin: 0;
+  }
+
+.Currency-Button > h5 {
+    margin: 0;
+  }
+
+  .Copper {
+    border-color: #b87333;
+    color: #b87333;
+  }
+
+  .Silver {
+    border-color: #c0c0c0;
+    color: #c0c0c0;
+  }
+
+  .Gold {
+    border-color: #FFD700;
+    color: #FFD700;
+  }
+
+  .Platinum {
+    border-color: #84D2C5;
+    color: #84D2C5;
+  }
+
+  .Currency-Form {
+    display: none;
+    position: absolute;
+    width: 90vw;
+    min-height: 90vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: #18161e;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: 999;
+    top: 30vh;
+  }
+
+  .Currency-Form-Top-Bar {
+    background-color: #100e14;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    height: 3rem;
+    width: 100%;
+  }
+
+  .Back-Arrow {
+    color: white;
+    font-size: 1.5em;
+    width: 1.3em;
+    height: 1.3em;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1vw;
+    background-color: transparent;
+    transition: 0.6s ease-out;
+  }
+  
+  .Back-Arrow:hover {
+    transition: 0.6s ease-in;
+    opacity: 100;
+  }
+
+  .Currency-Form-Top-Bar > p {
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .Currency-Form-Row {
+    margin-top: 1em;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Currency-Form-Column {
+    margin-top: 1em;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Currency-Form-Health-Bar > .Currency-Form-Health-Bar-Left {
+    background-color: #100e14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    width: 60vw;
+    height: 20vh;
+  }
+
+  .Currency-Form-Health-Bar > .Currency-Form-Health-Bar-Left > h1 {
+    margin: 1em 0 0 0;
+    padding: 0;
+  }
+
+  .Currency-Form-Health-Bar > .Currency-Form-Health-Bar-Left > p {
+    margin: -0.5em 0 0 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+
+  .Currency-Form-Health-Bar > .Splitter {
+    margin-left: 1em;
+  }
+
+  .Currency-Form-Health-Bar > .Currency-Form-Health-Bar-Right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    width: 60vw;
+    height: 20vh;
+  }
+
+  .Currency-Form-Health-Bar > .Currency-Form-Health-Bar-Right > h1 {
+    margin: 1em 0 0 0;
+    padding: 0;
+  }
+
+  .Currency-Form-Health-Bar > .Currency-Form-Health-Bar-Right > p {
+    margin: -0.5em 0 0 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+
+  .Currency-Form > .Currency-Form-Buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: flex-start;
+    justify-content: center;
+    width: 95%;
+    padding: 2em 0 2em 0;
+  }
+
+  .Currency-Form > .Currency-Form-Buttons > button {
+    margin-left: 3vw;
+    border: none;
+    width: 9em;
+    background-color: #01EEB8;
+    border-radius: 4px;
+    padding: 0.5em 1.5em;
+    color: #111111;
+    font-family: 'Cardo', serif;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .Currency-Form > .Currency-Form-Buttons > .Damage-Button {
+    background-color: #FF0000;
+    color: white;
+  }
+
+  .Currency-Form-Input-Row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .Currency-Form-Input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Currency-Form-Input p{
+    font-size: 0.8rem;
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+  }
+
+  .Currency-Form-Input > input {
+    border: none;
+    width: 2em;
+    background-color: #100e14;
+    border-radius: 4px;
+    padding: 0.5em 0.5em;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    justify-self: center;
+  }
+
+  .Item-Selector > select {
+    width: 90vw;
+    margin: 2rem 5vw;
+    height: 2rem;
+  }
+

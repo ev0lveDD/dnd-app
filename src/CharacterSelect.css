@@ -1,0 +1,159 @@
+.Character-Form {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: #100e14;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    top: 0;
+    background-repeat: repeat;
+  }
+
+
+  .Character-Form-Top-Bar {
+    background-color: #100e14;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    height: 10vh;
+    width: 100%;
+  }
+
+  .Back-Arrow {
+    color: white;
+    font-size: 1.5em;
+    width: 1.3em;
+    height: 1.3em;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    background-color: transparent;
+    transition: 0.6s ease-out;
+  }
+  
+  .Back-Arrow:hover {
+    transition: 0.6s ease-in;
+    opacity: 100;
+  }
+
+  .Character-Form-Top-Bar > p {
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .Character-Form-Body {
+    margin-top: 1em;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .Character-Form-Body > h1{
+    text-align: center;
+  }
+
+  .Char-Form-Row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Char-Form-Row select{
+    width: 16em;
+    height: 3em;
+    border-radius: 4px;
+    padding-left: 1em;
+    font-size: 1em;
+    background-color: #18161e;
+    border: none;
+    color: white;
+  }
+  
+
+  .New-Char-Submit {
+    display: flex;
+    font-family: 'Cardo', serif;
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    color: white;
+    height: 1.5em;
+    width: 100%;
+    background-color: #ce9d63;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 0px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .New-Char-Submit > h3 {
+    font-size: 0.5em;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+  }
+
+  .Delete-Character-Form {
+    display: flex;
+    position: absolute;
+    width: 80vw;
+    min-height: 50vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: #18161e;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    top: 2em;
+    background-repeat: repeat;
+  }
+
+  .Delete-Character-Form > .Character-Form-Top-Bar {
+    background-color: #18161e;
+  }
+
+  .New-Char-Submit {
+    display: flex;
+    font-family: 'Cardo', serif;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    height: 1.5em;
+    width: 100%;
+    background-color: #ce9d63;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 0px;
+  }
+
+  .Delete-Char-Form-Row {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Red-Button {
+    background-color: #FF0000;
+    margin-bottom: 2em;
+  }
+
+  .Border-Button {
+    background-color: transparent;
+    border: 1px solid #ce9d63;
+    margin: 0;
+  }
